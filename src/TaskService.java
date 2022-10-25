@@ -4,7 +4,7 @@ public class TaskService {
     String[] arr = new String[5];
     int index;
     public void addTask(String task){
-        if(index>=task.length()){
+        if(index>=arr.length){
             arr = Arrays.copyOf(arr, arr.length*2);
         }
         arr[index++] = task;
